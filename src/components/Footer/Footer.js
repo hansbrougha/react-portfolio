@@ -7,22 +7,22 @@ import Link from "@material-ui/core/Link";
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography variant="h6" color="#ffffff" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
+      <Link color="#ffffff" href="mailto:email@example.com">
         Andrew Hansbrough
       </Link>{" "}
       {new Date().getFullYear()}
-      {"."}
     </Typography>
   );
 }
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    backgroundColor: "#212121",
+    backgroundColor: "#000000",
     // marginTop: theme.spacing(8),
-    padding: theme.spacing(6, 0)
+    padding: theme.spacing(6, 0),
+    color: "#ffffff"
   }
 }));
 
@@ -36,12 +36,7 @@ export default function Footer(props) {
         <Typography variant="h6" align="center" gutterBottom>
           {title}
         </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="textSecondary"
-          component="p"
-        >
+        <Typography align="center" component="p">
           {description}
         </Typography>
         <Copyright />
