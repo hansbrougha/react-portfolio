@@ -16,8 +16,6 @@ function App() {
     <div className="App">
       <Router>
         <Nav />
-        {/* <ThemeProvider>
-          <CSSBaseline /> */}
         <Box>
           <Switch>
             <Route exact path={["/", "/main"]}>
@@ -31,7 +29,6 @@ function App() {
             </Route>
           </Switch>
         </Box>
-        {/* </ThemeProvider> */}
       </Router>
     </div>
   );
