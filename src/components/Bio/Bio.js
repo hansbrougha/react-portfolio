@@ -57,11 +57,8 @@ export default function RecipeReviewCard() {
 
   return (
     <Card className={classes.root}>
-      <Typography variant="h4" gutterBottom style={{ paddingTop: "20px" }}>
-        Andrew Hansbrough
-      </Typography>
-      <Typography variant="h6" style={{ paddingBottom: "20px" }} gutterBottom>
-        MERN Stack Developer
+      <Typography variant="h6" style={{ paddingTop: "20px" }} gutterBottom>
+        Welcome to my Portfolio!
       </Typography>
       <CardMedia
         className={classes.media}
@@ -81,19 +78,46 @@ export default function RecipeReviewCard() {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="Email">
-          <MailOutlineIcon style={{ fill: "#ffffff", fontSize: "50px" }} />
+          <MailOutlineIcon
+            style={{ fill: "#ffffff", fontSize: "50px" }}
+            onClick={(event) =>
+              (window.location.href = "mailto:hansbroughku@gmail.com")
+            }
+          />
         </IconButton>
         <IconButton aria-label="Resume">
-          <InsertDriveFileIcon style={{ fill: "#ffffff", fontSize: "50px" }} />
+          <InsertDriveFileIcon
+            style={{ fill: "#ffffff", fontSize: "50px" }}
+            onClick={(event) =>
+              (window.location.href =
+                "https://drive.google.com/file/d/1FnF-P1qLZIP1aEyPf6f0Meht-fbFfoiu/view?usp=sharing")
+            }
+          />
         </IconButton>
         <IconButton aria-label="Github">
-          <GitHubIcon style={{ fill: "#ffffff", fontSize: "50px" }} />
+          <GitHubIcon
+            style={{ fill: "#ffffff", fontSize: "50px" }}
+            onClick={(event) =>
+              (window.location.href = "https://github.com/hansbrougha")
+            }
+          />
         </IconButton>
         <IconButton aria-label="LinkedIn">
-          <LinkedInIcon style={{ fill: "#ffffff", fontSize: "50px" }} />
+          <LinkedInIcon
+            style={{ fill: "#ffffff", fontSize: "50px" }}
+            onClick={(event) =>
+              (window.location.href =
+                "https://www.linkedin.com/in/hansbroughandrew/")
+            }
+          />
         </IconButton>
         <IconButton aria-label="Instagram">
-          <InstagramIcon style={{ fill: "#ffffff", fontSize: "50px" }} />
+          <InstagramIcon
+            style={{ fill: "#ffffff", fontSize: "50px" }}
+            onClick={(event) =>
+              (window.location.href = "https://instagram.com/marrsoundarchives")
+            }
+          />
         </IconButton>
 
         <IconButton
