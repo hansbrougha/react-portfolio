@@ -26,11 +26,16 @@ This project is licensed under the ISC license.
 
 ## **Links**
 
+Repository:
+
 - https://hansbrougha.github.io/react-portfolio/
+
+Deployment:
+
 - https://github.com/hansbrougha/react-portfolio
 
 ## **Questions**
 
   <img src="https://avatars.githubusercontent.com/hansbrougha" style="width: 45px; height: 45px; border-radius:50%;">
 
-If you have any questions about the repo, submit a pull requst or issue, or contact hansbroughku@gmail.com.
+If you have any questions about the repo, or your searching for web developers, contact hansbroughku@gmail.com.
