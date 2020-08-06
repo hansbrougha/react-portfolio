@@ -7,6 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import ghapps from "../../ghapps.json";
 
 import Grid from "@material-ui/core/Grid";
 import Link from "@material-ui/core/Link";
@@ -53,16 +54,25 @@ export default function MediaCard(props) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          {/* Change anchor tag back to material ui Button when you figure it out */}
-
           <Button
-            size="small"
+            size="large"
             color="primary"
-            href="props.repo"
-            target="_blank"
-            rel="noopener"
+            // component={Link}
+            className={classes.button}
+            raised
+            onClick={(event) => (window.location.href = props.repo)}
           >
             Source Code
+          </Button>
+          <Button
+            size="large"
+            color="primary"
+            // component={Link}
+            className={classes.button}
+            raised
+            onClick={(event) => (window.location.href = props.deployed)}
+          >
+            Deployment
           </Button>
         </CardActions>
       </Card>
