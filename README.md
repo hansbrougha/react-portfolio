@@ -18,7 +18,7 @@ Welcome to my Web Development Portfolio. I built it with React and Material UI.
 
 To install necessary dependencies, run the following command:
 
-``npm start
+`npm start`
 
 ## **License**
 
@@ -31,6 +31,6 @@ This project is licensed under the ISC license.
 
 ## **Questions**
 
-  <img src="https://avatars.githubusercontent.com/hansbrougha" style="width: 45px; height: 45px; border-radius:100%;">
+  <img src="https://avatars.githubusercontent.com/hansbrougha" style="width: 45px; height: 45px; border-radius:50%;">
 
-If you have any questions about the repo, open an issue or contact hansbroughku@@gmail.com.
+If you have any questions about the repo, submit a pull requst or issue, or contact hansbroughku@gmail.com.
