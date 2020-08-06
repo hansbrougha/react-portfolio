@@ -6,28 +6,20 @@ import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
+import Box from "@material-ui/core/Box";
+
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
     display: "flex",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
+    background: "#000000",
+    borderColor: "#ffffff",
+    fullWidth: true
   },
-  bullet: {
-    display: "inline-block",
-    margin: "0 2px",
-    transform: "scale(0.8)"
-  },
-  title: {
-    fontSize: 14
-  },
-  pos: {
-    marginBottom: 12
-  },
-  textField: {
-    width: "25ch"
-  },
-  card: {
-    paddingTop: "50px"
+  formControl: {
+    borderColor: "#ffffff",
+    minWidth: 275
   }
 });
 
@@ -38,47 +30,55 @@ export default function SimpleCard() {
     <Paper className={classes.paper}>
       <Card className={classes.root}>
         <CardContent>
-          <Typography component="h2" variant="h3">
+          <Typography component="h2" variant="h3" style={{ color: "#ffffff" }}>
             Contact Me
           </Typography>
-
-          <form
-            className="contact-form"
-            action="https://formspree.io/xrgyayaz"
-            method="POST"
-          >
-            <br />
-            <br />
-            <TextField
-              type="name"
-              className="form-control"
-              placeholder="Name"
-              name="name"
-              required
-            />
-            <br />
-            <br />
-            <TextField
-              type="email"
-              className="form-control"
-              placeholder="Email"
-              name="name"
-              required
-            />
-            <br />
-            <br />
-            <TextField
-              className="form-control"
-              type="text"
-              placeholder="Message"
-              rows="7"
-              name="name"
-              required
-            />
-            <br />
-            <br />
-            <Button type="submit">Submit</Button>
-          </form>
+          <Box className={classes.TextField}>
+            <form
+              className="contact-form"
+              action="https://formspree.io/xrgyayaz"
+              method="POST"
+              color="#ffffff"
+            >
+              <br />
+              <br />
+              <TextField
+                type="name"
+                className="formControl"
+                placeholder="Name"
+                name="name"
+                required
+                id="outlined-basic"
+                variant="outlined"
+              />
+              <br />
+              <br />
+              <TextField
+                type="email"
+                className="formControl"
+                placeholder="Email"
+                name="name"
+                required
+                id="outlined-basic"
+                variant="outlined"
+              />
+              <br />
+              <br />
+              <TextField
+                variant="outlined"
+                id="outlined-basic"
+                className="formControl"
+                type="text"
+                placeholder="Message"
+                rows="7"
+                name="name"
+                required
+              />
+              <br />
+              <br />
+              <Button type="submit">Submit</Button>
+            </form>
+          </Box>
         </CardContent>
       </Card>
     </Paper>
