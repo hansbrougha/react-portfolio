@@ -138,6 +138,12 @@ export default function RecipeReviewCard() {
             <br />@ KU Coding Bootcamp
           </Typography>
           <Typography paragraph>
+            Location: Kansas Ciy, MO
+            <br />
+            Current Employer: UMKC Marr Sound Archives
+            <br />
+          </Typography>
+          <Typography paragraph>
             Specializing in MongoDB, Express, React, NodeJS, and Bootstrap 4.
             <br />
             Trained in HTML, CSS, Javascript, jQuery, MySQL and NoSQL.
