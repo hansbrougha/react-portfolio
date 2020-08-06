@@ -37,8 +37,8 @@ export default function CenteredGrid() {
                   name={ghapps.name}
                   image={ghapps.image}
                   description={ghapps.description}
-                  href={ghapps.sourceCode}
-                  url={ghapps.url}
+                  repo={ghapps.repo}
+                  deployed={ghapps.deployed}
                 />
               ))}
             </Grid>
