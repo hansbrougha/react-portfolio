@@ -62,21 +62,45 @@ export default function ContactCard(props) {
               <IconButton aria-label="Email">
                 <MailOutlineIcon
                   style={{ fill: "#ffffff", fontSize: "40px" }}
+                  onClick={(event) =>
+                    (window.location.href = "mailto:email@example.com")
+                  }
                 />
               </IconButton>
               <IconButton aria-label="Resume">
                 <InsertDriveFileIcon
                   style={{ fill: "#ffffff", fontSize: "40px" }}
+                  onClick={(event) =>
+                    (window.location.href =
+                      "https://drive.google.com/file/d/1FnF-P1qLZIP1aEyPf6f0Meht-fbFfoiu/view?usp=sharing")
+                  }
                 />
               </IconButton>
               <IconButton aria-label="Github">
-                <GitHubIcon style={{ fill: "#ffffff", fontSize: "40px" }} />
+                <GitHubIcon
+                  style={{ fill: "#ffffff", fontSize: "40px" }}
+                  onClick={(event) =>
+                    (window.location.href = "https://github.com/hansbrougha")
+                  }
+                />
               </IconButton>
               <IconButton aria-label="LinkedIn">
-                <LinkedInIcon style={{ fill: "#ffffff", fontSize: "40px" }} />
+                <LinkedInIcon
+                  style={{ fill: "#ffffff", fontSize: "40px" }}
+                  onClick={(event) =>
+                    (window.location.href =
+                      "https://www.linkedin.com/in/hansbroughandrew/")
+                  }
+                />
               </IconButton>
               <IconButton aria-label="Instagram">
-                <InstagramIcon style={{ fill: "#ffffff", fontSize: "40px" }} />
+                <InstagramIcon
+                  style={{ fill: "#ffffff", fontSize: "40px" }}
+                  onClick={(event) =>
+                    (window.location.href =
+                      "https://instagram.com/marrsoundarchives")
+                  }
+                />
               </IconButton>
             </CardContent>
           </div>
