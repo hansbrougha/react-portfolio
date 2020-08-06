@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Day Planner",
+    "image": "./assets/images/day-planner.png",
+    "description": "Keep track of your daily tasks by the hour, 9am to 6pm. Uses jQuery and Moment.js.",
+    "repo": "https://repo.com/hansbrougha/day-planner",
+    "deployed": "https://hansbrougha.repo.io/day-planner/"
+  },
+  {
+    "id": 2,
+    "name": "README Generator",
+    "image": "./assets/images/readme-generator.jpg",
+    "description": "Simplify your workflow. Easily generate a README file using Node.js and Inquirer NPM package.",
+    "repo": "https://repo.com/hansbrougha/day-planner",
+    "deployed": "https://hansbrougha.repo.io/day-planner/"
+  },
+  {
+    "id": 3,
+    "name": "Team Generator",
+    "image": "./assets/images/team-generator.jpg",
+    "description": "Select from Manager, Engineer, or Intern and build your team. App utilizes Object-Oriented Programming, Prototypes and Class Constructors.",
+    "repo": "https://repo.com/hansbrougha/day-planner",
+    "deployed": "https://hansbrougha.repo.io/day-planner/"
+  },
+  {
+    "id": 4,
+    "name": "Note-Taker",
+    "image": "./assets/images/note-taker.png",
+    "description": "Take Notes. Save Notes. Get Notes. App posts to and requests notes from server using Express NPM package.",
+    "repo": "https://repo.com/hansbrougha/day-planner",
+    "deployed": "https://hansbrougha.repo.io/day-planner/"
+  },
+  {
+    "id": 5,
+    "name": "Eat-Da-Burger",
+    "image": "./assets/images/burger.png",
+    "description": "MVC Controller. Order a burger. Eat that Burger. App utilizes MVC, Node.js and Express Handlebars.",
+    "repo": "https://repo.com/hansbrougha/day-planner",
+    "deployed": "https://hansbrougha.repo.io/day-planner/"
+  },
+  {
+    "id": 6,
+    "name": "Employee Tracker",
+    "image": "./assets/images/employee-tracker.png",
+    "description": "Add, Edit, Delete: Employees, Roles, Departments. App utilizes Node.js, MySQL and CRUD methods.",
+    "repo": "https://repo.com/hansbrougha/day-planner",
+    "deployed": "https://hansbrougha.repo.io/day-planner/"
+  },
+  {
+    "id": 7,
+    "name": "Project You",
+    "image": "./assets/images/projectyou.png",
+    "description": "Log hours of sleep, fluid-intake, and hours of exercise. App utilizes Node.js, Express Handlebars, MySQL, Passport. This was a collaborative project.",
+    "repo": "https://repo.com/hansbrougha/day-planner",
+    "deployed": "https://hansbrougha.repo.io/day-planner/"
+  },
+  {
+    "id": 8,
+    "name": "Employee-Directory",
+    "image": "./assets/images/day-planner.png",
+    "description": "Write a description for this app.",
+    "repo": "https://repo.com/hansbrougha/day-planner",
+    "deployed": "https://hansbrougha.repo.io/day-planner/"
+  }
+]
