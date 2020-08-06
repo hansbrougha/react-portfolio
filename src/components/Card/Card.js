@@ -13,21 +13,13 @@ import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 375,
-    background: "#000000",
-    color: "#ffffff"
+    maxWidth: 375
   },
   media: {
     height: 150
   },
   marginAutoItem: {
     margin: "auto"
-  },
-  typography: {
-    color: "#ffffff"
-  },
-  button: {
-    color: "#ffffff"
   }
 });
 
@@ -47,7 +39,7 @@ export default function MediaCard(props) {
             <Typography gutterBottom variant="h5" component="h2">
               {props.name}
             </Typography>
-            <Typography variant="body2" color="#ffffff" component="p">
+            <Typography variant="body2" component="p">
               {props.description}
             </Typography>
           </CardContent>
@@ -58,7 +50,7 @@ export default function MediaCard(props) {
             color="primary"
             // component={Link}
             className={classes.button}
-            raised
+            raised="true"
             onClick={(event) => (window.location.href = props.repo)}
           >
             Source Code
@@ -68,7 +60,7 @@ export default function MediaCard(props) {
             color="primary"
             // component={Link}
             className={classes.button}
-            raised
+            raised="true"
             onClick={(event) => (window.location.href = props.deployed)}
           >
             Deployment

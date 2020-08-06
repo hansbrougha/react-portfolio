@@ -13,12 +13,9 @@ const useStyles = makeStyles({
     minWidth: 275,
     display: "flex",
     flexWrap: "wrap",
-    background: "#000000",
-    borderColor: "#ffffff",
     fullWidth: true
   },
   formControl: {
-    borderColor: "#ffffff",
     minWidth: 275
   }
 });
@@ -30,7 +27,7 @@ export default function SimpleCard() {
     <Paper className={classes.paper}>
       <Card className={classes.root}>
         <CardContent>
-          <Typography component="h2" variant="h3" style={{ color: "#ffffff" }}>
+          <Typography component="h2" variant="h3">
             Contact Me
           </Typography>
           <Box className={classes.TextField}>
@@ -38,7 +35,6 @@ export default function SimpleCard() {
               className="contact-form"
               action="https://formspree.io/xrgyayaz"
               method="POST"
-              color="#ffffff"
             >
               <br />
               <br />

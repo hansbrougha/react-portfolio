@@ -21,33 +21,12 @@ export default function BasicButtonGroup() {
     <div className={classes.root}>
       <ButtonGroup
         variant="text"
-        color="dark"
+        color="primary"
         aria-label="text primary button group"
       >
-        <Button
-          style={{
-            color: "#ffffff"
-          }}
-          href="contact"
-        >
-          Contact
-        </Button>
-        <Button
-          style={{
-            color: "#ffffff"
-          }}
-          href="/"
-        >
-          Home
-        </Button>
-        <Button
-          style={{
-            color: "#ffffff"
-          }}
-          href="portfolio"
-        >
-          Portfolio
-        </Button>
+        <Button href="contact">Contact</Button>
+        <Button href="/">Home</Button>
+        <Button href="portfolio">Portfolio</Button>
       </ButtonGroup>
     </div>
   );

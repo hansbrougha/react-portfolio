@@ -7,11 +7,9 @@ import Link from "@material-ui/core/Link";
 
 function Copyright() {
   return (
-    <Typography variant="h6" color="#ffffff" align="center">
+    <Typography variant="h6" align="center">
       {"Copyright © "}
-      <Link color="#ffffff" href="mailto:email@example.com">
-        Andrew Hansbrough
-      </Link>{" "}
+      <Link href="mailto:hansbroughku@gmail.com">Andrew Hansbrough</Link>{" "}
       {new Date().getFullYear()}
     </Typography>
   );
@@ -19,10 +17,8 @@ function Copyright() {
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    backgroundColor: "#000000",
     // marginTop: theme.spacing(8),
-    padding: theme.spacing(6, 0),
-    color: "#ffffff"
+    padding: theme.spacing(6, 0)
   }
 }));
 
