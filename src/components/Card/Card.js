@@ -46,22 +46,26 @@ export default function MediaCard(props) {
         </CardActionArea>
         <CardActions>
           <Button
+            component={"a"}
             size="large"
             color="primary"
-            // component={Link}
             className={classes.button}
             raised="true"
-            onClick={(event) => (window.location.href = props.repo)}
+            href={props.repo}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Source Code
           </Button>
           <Button
+            component={"a"}
             size="large"
             color="primary"
-            // component={Link}
             className={classes.button}
             raised="true"
-            onClick={(event) => (window.location.href = props.deployed)}
+            href={props.deployed}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Deployment
           </Button>

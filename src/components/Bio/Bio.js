@@ -55,7 +55,7 @@ export default function RecipeReviewCard() {
       </Typography>
       <CardMedia
         className={classes.media}
-        image="./assets/images/mainprofile.jpg"
+        image="/public/assets/images/mainprofile.jpg"
         title="Andrew Hansbrough"
       />
       <CardContent>
@@ -70,51 +70,46 @@ export default function RecipeReviewCard() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <a
+        <IconButton
+          aria-label="Email"
           href="mailto:email@example.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IconButton aria-label="Email">
-            <MailOutlineIcon style={{ fontSize: "50px" }} />
-          </IconButton>
-        </a>
-        <a
+          <MailOutlineIcon style={{ fontSize: "40px" }} />
+        </IconButton>
+        <IconButton
+          aria-label="Resume"
           href="https://drive.google.com/file/d/1FnF-P1qLZIP1aEyPf6f0Meht-fbFfoiu/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IconButton aria-label="Resume">
-            <InsertDriveFileIcon style={{ fontSize: "50px" }} />
-          </IconButton>
-        </a>
-        <a
+          <InsertDriveFileIcon style={{ fontSize: "40px" }} />
+        </IconButton>
+        <IconButton
+          aria-label="Github"
           href="https://github.com/hansbrougha"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IconButton aria-label="Github">
-            <GitHubIcon style={{ fontSize: "50px" }} />
-          </IconButton>
-        </a>
-        <a
+          <GitHubIcon style={{ fontSize: "40px" }} />
+        </IconButton>
+        <IconButton
+          aria-label="LinkedIn"
           href="https://www.linkedin.com/in/hansbroughandrew/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IconButton aria-label="LinkedIn">
-            <LinkedInIcon style={{ fontSize: "50px" }} />
-          </IconButton>
-        </a>
-        <a
+          <LinkedInIcon style={{ fontSize: "40px" }} />
+        </IconButton>
+        <IconButton
+          aria-label="Instagram"
           href="https://instagram.com/marrsoundarchives"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IconButton aria-label="Instagram">
-            <InstagramIcon style={{ fontSize: "50px" }} />
-          </IconButton>
-        </a>
+          <InstagramIcon style={{ fontSize: "40px" }} />
+        </IconButton>
 
         <IconButton
           className={clsx(classes.expand, {

@@ -35,14 +35,14 @@ export default function ContactCard(props) {
 
   return (
     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-      <CardActionArea component="a">
+      <CardActionArea>
         <Card className={classes.card}>
           <div className={classes.cardDetails}>
             <CardContent>
               <Typography component="h2" variant="h5">
                 Andrew Hansbrough
               </Typography>
-              <Typography variant="subtitle1" color="textSecondary">
+              <Typography variant="subtitle1" color="textPrimary">
                 MERN Stack Developer
               </Typography>
               <Typography variant="subtitle1" paragraph>
@@ -57,48 +57,50 @@ export default function ContactCard(props) {
               <Typography component="h3" variant="h5">
                 Let's Connect!
               </Typography>
-              <IconButton aria-label="Email">
-                <MailOutlineIcon
-                  style={{ fontSize: "40px" }}
-                  onClick={(event) =>
-                    (window.location.href = "mailto:email@example.com")
-                  }
-                />
+
+              <IconButton
+                aria-label="Email"
+                href="mailto:email@example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MailOutlineIcon style={{ fontSize: "40px" }} />
               </IconButton>
-              <IconButton aria-label="Resume">
-                <InsertDriveFileIcon
-                  style={{ fontSize: "40px" }}
-                  onClick={(event) =>
-                    (window.location.href =
-                      "https://drive.google.com/file/d/1FnF-P1qLZIP1aEyPf6f0Meht-fbFfoiu/view?usp=sharing")
-                  }
-                />
+
+              <IconButton
+                aria-label="Resume"
+                href="https://drive.google.com/file/d/1FnF-P1qLZIP1aEyPf6f0Meht-fbFfoiu/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <InsertDriveFileIcon style={{ fontSize: "40px" }} />
               </IconButton>
-              <IconButton aria-label="Github">
-                <GitHubIcon
-                  style={{ fontSize: "40px" }}
-                  onClick={(event) =>
-                    (window.location.href = "https://github.com/hansbrougha")
-                  }
-                />
+
+              <IconButton
+                aria-label="Github"
+                href="https://github.com/hansbrougha"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitHubIcon style={{ fontSize: "40px" }} />
               </IconButton>
-              <IconButton aria-label="LinkedIn">
-                <LinkedInIcon
-                  style={{ fontSize: "40px" }}
-                  onClick={(event) =>
-                    (window.location.href =
-                      "https://www.linkedin.com/in/hansbroughandrew/")
-                  }
-                />
+
+              <IconButton
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/hansbroughandrew/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkedInIcon style={{ fontSize: "40px" }} />
               </IconButton>
-              <IconButton aria-label="Instagram">
-                <InstagramIcon
-                  style={{ fontSize: "40px" }}
-                  onClick={(event) =>
-                    (window.location.href =
-                      "https://instagram.com/marrsoundarchives")
-                  }
-                />
+
+              <IconButton
+                aria-label="Instagram"
+                href="https://instagram.com/marrsoundarchives"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <InstagramIcon style={{ fontSize: "40px" }} />
               </IconButton>
             </CardContent>
           </div>
