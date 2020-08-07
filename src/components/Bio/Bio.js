@@ -70,48 +70,51 @@ export default function RecipeReviewCard() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="Email">
-          <MailOutlineIcon
-            style={{ fontSize: "50px" }}
-            onClick={(event) =>
-              (window.location.href = "mailto:hansbroughku@gmail.com")
-            }
-          />
-        </IconButton>
-        <IconButton aria-label="Resume">
-          <InsertDriveFileIcon
-            style={{ fontSize: "50px" }}
-            onClick={(event) =>
-              (window.location.href =
-                "https://drive.google.com/file/d/1FnF-P1qLZIP1aEyPf6f0Meht-fbFfoiu/view?usp=sharing")
-            }
-          />
-        </IconButton>
-        <IconButton aria-label="Github">
-          <GitHubIcon
-            style={{ fontSize: "50px" }}
-            onClick={(event) =>
-              (window.location.href = "https://github.com/hansbrougha")
-            }
-          />
-        </IconButton>
-        <IconButton aria-label="LinkedIn">
-          <LinkedInIcon
-            style={{ fontSize: "50px" }}
-            onClick={(event) =>
-              (window.location.href =
-                "https://www.linkedin.com/in/hansbroughandrew/")
-            }
-          />
-        </IconButton>
-        <IconButton aria-label="Instagram">
-          <InstagramIcon
-            style={{ fontSize: "50px" }}
-            onClick={(event) =>
-              (window.location.href = "https://instagram.com/marrsoundarchives")
-            }
-          />
-        </IconButton>
+        <a
+          href="mailto:email@example.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconButton aria-label="Email">
+            <MailOutlineIcon style={{ fontSize: "50px" }} />
+          </IconButton>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1FnF-P1qLZIP1aEyPf6f0Meht-fbFfoiu/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconButton aria-label="Resume">
+            <InsertDriveFileIcon style={{ fontSize: "50px" }} />
+          </IconButton>
+        </a>
+        <a
+          href="https://github.com/hansbrougha"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconButton aria-label="Github">
+            <GitHubIcon style={{ fontSize: "50px" }} />
+          </IconButton>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/hansbroughandrew/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconButton aria-label="LinkedIn">
+            <LinkedInIcon style={{ fontSize: "50px" }} />
+          </IconButton>
+        </a>
+        <a
+          href="https://instagram.com/marrsoundarchives"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconButton aria-label="Instagram">
+            <InstagramIcon style={{ fontSize: "50px" }} />
+          </IconButton>
+        </a>
 
         <IconButton
           className={clsx(classes.expand, {
