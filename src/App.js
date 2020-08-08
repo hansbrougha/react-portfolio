@@ -45,13 +45,19 @@ function App() {
           <Nav />
 
           <Switch>
-            <Route exact path={["/", "/main"]}>
+            <Route
+              exact
+              path={[
+                process.env.PUBLIC_URL + "/",
+                process.env.PUBLIC_URL + "/main"
+              ]}
+            >
               <Main />
             </Route>
-            <Route exact path={["/contact"]}>
+            <Route exact path={[process.env.PUBLIC_URL + "/contact"]}>
               <Contact />
             </Route>
-            <Route exact path={["/portfolio"]}>
+            <Route exact path={[process.env.PUBLIC_URL + "/portfolio"]}>
               <Portfolio />
             </Route>
           </Switch>

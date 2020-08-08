@@ -24,9 +24,9 @@ export default function BasicButtonGroup() {
         color="primary"
         aria-label="text primary button group"
       >
-        <Button href="contact">Contact</Button>
-        <Button href="/">Home</Button>
-        <Button href="portfolio">Portfolio</Button>
+        <Button href={process.env.PUBLIC_URL + "/contact"}>Contact</Button>
+        <Button href={process.env.PUBLIC_URL + "/"}>Home</Button>
+        <Button href={process.env.PUBLIC_URL + "/portfolio"}>Portfolio</Button>
       </ButtonGroup>
     </div>
   );

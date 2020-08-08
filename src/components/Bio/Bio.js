@@ -58,7 +58,7 @@ export default function RecipeReviewCard() {
       </Typography>
       <CardMedia
         className={classes.media}
-        image="../../../public/assets/images/mainprofile.jpg"
+        image="./assets/images/mainprofile.jpg"
         title="Andrew Hansbrough"
       />
       <CardContent>

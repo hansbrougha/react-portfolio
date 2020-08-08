@@ -31,13 +31,12 @@ export default function CenteredGrid() {
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <Paper className={(classes.paper, classes.backdrop)}>
             <Grid container spacing={3}>
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+              <Grid item xs={12} sm={12} md={6} lg={6} xl={12}>
                 <Paper className={classes.paper}>
                   <ContactCard />
                 </Paper>
               </Grid>
-
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+              <Grid item xs={12} sm={12} md={6} lg={6} xl={12}>
                 <Paper className={classes.paper}>
                   <ContactForm />
                 </Paper>
