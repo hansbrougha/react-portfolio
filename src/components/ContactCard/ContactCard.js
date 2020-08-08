@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
@@ -17,9 +17,10 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   card: {
-    display: "flex"
+    display: "flex",
+    background: theme.palette.primary.dark
   },
   cardDetails: {
     flex: 1
@@ -27,11 +28,10 @@ const useStyles = makeStyles({
   cardMedia: {
     width: 300
   }
-});
+}));
 
 export default function ContactCard(props) {
   const classes = useStyles();
-  const { post } = props;
 
   return (
     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
@@ -116,7 +116,3 @@ export default function ContactCard(props) {
     </Grid>
   );
 }
-
-ContactCard.propTypes = {
-  post: PropTypes.object
-};

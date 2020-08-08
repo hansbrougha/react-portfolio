@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    color: theme.palette.text.primary
+    color: theme.palette.text.primary,
+    background: theme.palette.primary.transparent
   },
   backdrop: {
     backgroundImage: `url(${backdrop})`
@@ -35,6 +36,7 @@ export default function CenteredGrid() {
                   <ContactCard />
                 </Paper>
               </Grid>
+
               <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                 <Paper className={classes.paper}>
                   <ContactForm />

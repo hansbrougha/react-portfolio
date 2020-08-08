@@ -8,7 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import Box from "@material-ui/core/Box";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     minWidth: 275,
     display: "flex",
@@ -17,33 +17,32 @@ const useStyles = makeStyles({
   },
   formControl: {
     minWidth: 275
+  },
+  card: {
+    background: theme.palette.primary.dark
   }
-});
+}));
 
 export default function SimpleCard() {
   const classes = useStyles();
 
   return (
     <Paper className={classes.paper}>
-      <Card className={classes.root}>
+      <Card className={(classes.root, classes.card)}>
         <CardContent>
           <Typography component="h2" variant="h3">
             Contact Me
           </Typography>
           <Box className={classes.TextField}>
-            <form
-              className="contact-form"
-              action="https://formspree.io/xrgyayaz"
-              method="POST"
-            >
+            <form action="https://formspree.io/xrgyayaz" method="POST">
               <br />
               <br />
               <TextField
                 type="name"
-                className="formControl"
                 placeholder="Name"
                 name="name"
                 required
+                fullWidth
                 id="outlined-basic"
                 variant="outlined"
               />
@@ -51,10 +50,10 @@ export default function SimpleCard() {
               <br />
               <TextField
                 type="email"
-                className="formControl"
                 placeholder="Email"
                 name="name"
                 required
+                fullWidth
                 id="outlined-basic"
                 variant="outlined"
               />
@@ -69,10 +68,13 @@ export default function SimpleCard() {
                 rows="7"
                 name="name"
                 required
+                fullWidth
               />
               <br />
               <br />
-              <Button type="submit">Submit</Button>
+              <Button type="submit" size="large">
+                Submit
+              </Button>
             </form>
           </Box>
         </CardContent>

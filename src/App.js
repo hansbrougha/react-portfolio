@@ -13,19 +13,20 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      light: "#7ef1da",
-      main: "#1D8B75",
-      dark: "#135245",
+      light: "#ffffff",
+      main: "#ffffff",
+      dark: "#000000",
+      transparent: "#00000000",
       contrastText: "#fff"
     },
     secondary: {
-      light: "#999999",
-      main: "#212121",
-      dark: "#090909",
+      light: "#ffffff",
+      main: "#ffffff",
+      dark: "#ffffff",
       contrastText: "#000"
     },
     danger: {
-      light: "#f56985",
+      light: "#ffffff",
       main: "#8C1D34",
       dark: "#580415",
       contrastText: "#000"
@@ -40,8 +41,9 @@ function App() {
   return (
     <Router>
       <MuiThemeProvider theme={theme}>
-        <Nav />
         <Box>
+          <Nav />
+
           <Switch>
             <Route exact path={["/", "/main"]}>
               <Main />

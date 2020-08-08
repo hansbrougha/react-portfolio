@@ -35,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.shortest
     })
   },
+  card: {
+    background: theme.palette.primary.dark
+  },
   expandOpen: {
     transform: "rotate(180deg)"
   }
@@ -49,13 +52,13 @@ export default function RecipeReviewCard() {
   };
 
   return (
-    <Card className={classes.root}>
+    <Card className={(classes.root, classes.card)}>
       <Typography variant="h6" style={{ paddingTop: "20px" }} gutterBottom>
         Welcome to my Portfolio!
       </Typography>
       <CardMedia
         className={classes.media}
-        image="/public/assets/images/mainprofile.jpg"
+        image="../../../public/assets/images/mainprofile.jpg"
         title="Andrew Hansbrough"
       />
       <CardContent>

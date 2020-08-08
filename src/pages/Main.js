@@ -4,7 +4,6 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
 import StickyFooter from "../components/Footer/Footer";
-import Link from "@material-ui/core/Link";
 import Bio from "../components/Bio/Bio";
 import backdrop from "../components/Backdrop/7150.jpg";
 
@@ -15,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    color: theme.palette.text.primary
+    background: theme.palette.primary.transparent
   },
 
   backdrop: {
